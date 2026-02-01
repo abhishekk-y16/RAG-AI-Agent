@@ -45,12 +45,6 @@ Ingest the sample knowledge base once, then start chatting:
 curl -X POST http://localhost:8000/ingest
 ```
 
-## API Endpoints (Short)
-
-- `POST /ingest` — build the index from the default PDF
-- `POST /upload` — upload a PDF/DOCX/TXT and rebuild the index
-- `POST /chat` — ask questions with intent‑aware RAG
-
 Example chat request:
 
 ```bash
