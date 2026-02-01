@@ -1,0 +1,60 @@
+# RAG AI Agent
+
+An end‑to‑end document intelligence app that ingests files, performs semantic search, and answers questions with Groq‑powered RAG—wrapped in a clean React dashboard.
+
+## Highlights
+
+- Multi‑document ingestion and semantic retrieval
+- Intent‑aware tool routing for smarter responses
+- Chat, Documents, Quick Tools, Workflows, and Analytics UI
+
+**Tech Stack:** FastAPI + Uvicorn, Groq, React + Vite
+
+## Quick Start
+
+### Backend
+
+1. Set your Groq key:
+   ```bash
+   setx GROQ_API_KEY "YOUR_GROQ_API_KEY"
+   ```
+2. Install and run:
+   ```bash
+   cd backend
+   python -m venv .venv
+   .venv\Scripts\activate
+   pip install -r requirements.txt
+   uvicorn main:app --reload --port 8000
+   ```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open the app at `http://localhost:5173`.
+
+## First Use
+
+Ingest the sample knowledge base once, then start chatting:
+
+```bash
+curl -X POST http://localhost:8000/ingest
+```
+
+## API Endpoints (Short)
+
+- `POST /ingest` — build the index from the default PDF
+- `POST /upload` — upload a PDF/DOCX/TXT and rebuild the index
+- `POST /chat` — ask questions with intent‑aware RAG
+
+Example chat request:
+
+```bash
+curl -X POST http://localhost:8000/chat \
+   -H "Content-Type: application/json" \
+   -d "{\"message\": \"Summarize the document\"}"
+```

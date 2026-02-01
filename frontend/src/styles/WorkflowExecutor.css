@@ -1,0 +1,270 @@
+/* Workflow Executor Styles */
+
+.workflow-executor {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Document Selector */
+.workflow-doc-selector {
+  background: #F0F9FF;
+  border: 1px solid #0EA5E9;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.workflow-doc-selector label {
+  font-weight: 600;
+  color: #0C4A6E;
+  white-space: nowrap;
+}
+
+.workflow-doc-selector select {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #0EA5E9;
+  border-radius: 4px;
+  background: white;
+  color: #0C4A6E;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.workflow-doc-selector select:hover {
+  border-color: #0284C7;
+}
+
+.workflow-doc-selector select:focus {
+  outline: none;
+  border-color: #0284C7;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+}
+
+.workflow-selection {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #f9f9f9;
+}
+
+.workflow-selection h3 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.workflow-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.workflow-btn {
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #34495e;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.workflow-btn:hover {
+  border-color: #3498db;
+  background: #f0f7ff;
+  color: #3498db;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+  transform: translateY(-2px);
+}
+
+.workflow-btn.active {
+  border-color: #3498db;
+  background: #3498db;
+  color: white;
+}
+
+.workflow-input {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #f9f9f9;
+}
+
+.workflow-input h3 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.input-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field label {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.input-field textarea,
+.input-field input,
+.input-field select {
+  padding: 0.75rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.input-field textarea:focus,
+.input-field input:focus,
+.input-field select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.workflow-result {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: white;
+  margin-top: 1.5rem;
+}
+
+.workflow-result h3 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.error-box {
+  background: #fadbd8;
+  border: 1px solid #e74c3c;
+  color: #c0392b;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.result-box {
+  border: 1px solid #d5f4e6;
+  background: #ecfdf5;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.result-status {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d5f4e6;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.status.completed {
+  background: #27ae60;
+  color: white;
+}
+
+.status.failed {
+  background: #e74c3c;
+  color: white;
+}
+
+.status.pending {
+  background: #f39c12;
+  color: white;
+}
+
+.status.running {
+  background: #3498db;
+  color: white;
+}
+
+.duration {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.results-detail {
+  margin-top: 1rem;
+}
+
+.results-detail h4 {
+  margin-bottom: 0.75rem;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+}
+
+.step-result {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.step-result h5 {
+  color: #3498db;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.step-result pre {
+  background: #f9f9f9;
+  padding: 0.75rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.8rem;
+  font-family: "Courier New", monospace;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .workflow-list {
+    grid-template-columns: 1fr;
+  }
+
+  .input-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-status {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

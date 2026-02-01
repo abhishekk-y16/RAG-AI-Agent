@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Env
+.env
+backend/.env
+
+# Node
+node_modules/
+dist/
+build/
+
+# Database / artifacts
+*.db
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db

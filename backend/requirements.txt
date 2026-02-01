@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+pypdf
+tiktoken
+faiss-cpu
+numpy
+requests
+reportlab
+python-dotenv
+groq
+openai
+sentence-transformers
+jsonschema
