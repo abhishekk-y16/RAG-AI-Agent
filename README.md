@@ -1,6 +1,6 @@
 # RAG AI Agent
 
-An end‑to‑end Document Intelligence app that ingests files, performs semantic search, and answers questions with Groq‑powered RAG—wrapped in a clean React dashboard.
+An end‑to‑end Document Intelligence app that Ingests files, performs semantic search, and answers questions with Groq‑powered RAG—wrapped in a clean React dashboard.
 
 ## Highlights
 
