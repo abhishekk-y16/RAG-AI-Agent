@@ -3,7 +3,7 @@ from .field_extractor import extract_fields_from_text
 
 
 def chunk_text(text: str, chunk_tokens: int = 450, overlap_tokens: int = 80):
-    """Chunk text into overlapping segments with Field extraction"""
+    """Chunk text into voerlapping segments with Field extraction"""
     enc = tiktoken.get_encoding("cl100k_base")
     tokens = enc.encode(text)
 
