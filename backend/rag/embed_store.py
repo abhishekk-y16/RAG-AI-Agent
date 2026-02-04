@@ -27,7 +27,7 @@ def mock_embed_text(text: str) -> list:
 
 
 def embed_texts(texts: List[str]) -> np.ndarray:
-    """Generate embeddings  Uses mock for development due to API quotas"""
+    """Generate embeddings  Uses mock for Development due to API quotas"""
     embeddings = []
     for text in texts:
         # Use mock embeddings for development (avoids API quota limits)
