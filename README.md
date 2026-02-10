@@ -4,7 +4,7 @@ An End‑to‑End Document Intelligence app that Ingests files, performs semanti
 
 ## Highlights
 
-- Multi‑document ingestion and semantic retrieval
+- Multi‑document Ingestion and semantic retrieval
 - Intent‑aware tool routing for smarter responses
 - Chat, Documents, Quick Tools, Workflows, and Analytics UI
 
