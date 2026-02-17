@@ -8,7 +8,7 @@ An End‑to‑End Document Intelligence app that Ingests files, performs semanti
 - Intent‑aware tool routing for smarter responses
 - Chat, Documents, Quick Tools, Workflows, and Analytics UI
 
-**Tech Stack:** FastAPI + Uvicorn, Groq, React + Vite
+**Tech Stack:** FastAPI  + Uvicorn, Groq, React + Vite
 
 ## Quick Start
 
