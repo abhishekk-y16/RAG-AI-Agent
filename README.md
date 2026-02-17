@@ -2,7 +2,7 @@
 
 An End‑to‑End Document Intelligence app that Ingests files, performs semantic search, and answers questions with Groq‑powered RAG—wrapped in a clean React dashboard.
 
-## Highlights
+## Highlights 
 
 - Multi‑document Ingestion and semantic retrieval
 - Intent‑aware tool routing for smarter responses
