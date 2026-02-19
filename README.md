@@ -14,7 +14,7 @@ An End‑to‑End Document Intelligence app that Ingests files, performs semanti
 
 ### Backend
 
-1. Set your Groq key:
+1. Set your Groq key: 
    ```bash
    setx GROQ_API_KEY "YOUR_GROQ_API_KEY" 
    ```
