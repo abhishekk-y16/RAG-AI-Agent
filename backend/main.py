@@ -95,7 +95,7 @@ def ingest():
     text, _ = pdf_to_text(PDF_PATH)
     chunks_list = chunk_text(text)
     
-    # Convert chunks to format expected by build_and_save_index
+    # Convert chunks to format expected by build_and_save_index 
     formatted_chunks = []
     for i, chunk in enumerate(chunks_list):
         chunk_dict = {
