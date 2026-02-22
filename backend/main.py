@@ -58,7 +58,7 @@ chunks = None
 metadata_manager = MetadataManager(METADATA_PATH)
 db_manager = DatabaseManager(os.path.join(DATA_DIR, "ragaiagent.db"))  # SQLite database
 
-# Initialize semantic RAG system (Phase 4)
+# Initialize semantic RAG system (Phase 4) 
 try:
     semantic_rag = create_rag_system(use_hybrid=True)
     print("✓ Semantic RAG system initialized")
