@@ -1,6 +1,6 @@
 """
 SQLite Database manager for persistence and audit logging.  
-Provides scalable SQL-based storage for  all RAG AI Agent operations.   
+Provides scalable SQL-based storage for  all RAG AI Agent operations.    
 """
 import sqlite3
 import os
